@@ -26,7 +26,7 @@ if not data.empty:
   # Calculate the Monthly Sharpe Ratio
   monthly_sharpe_ratio = mean_excess_return / std_dev_return
 
-  st.metric(label="MSFT Sharpe Ratio", value=f"${monthly_sharpe_ratio:.3f}")
+  st.metric(label="MSFT Sharpe Ratio", value=f"{monthly_sharpe_ratio:.3f}")
 
 else:
   st.error("No data found for MSFT.")
