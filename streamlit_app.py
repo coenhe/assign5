@@ -32,10 +32,6 @@ st.title("MSFT Sharpe Ratio")
 # Fetch 5 years of historical data for MSFT
 data = monthly_sharpe_ratio
 if not data.empty:
-  # Calculate the total average closing price
-  overall_average = data['Close'].mean()
-  
-  # Print the result directly to the screen
-  st.metric(label="MSFT Sharpe Ratio", value=f"${overall_average:.2f}")
+  st.metric(label="MSFT Sharpe Ratio", value=f"${data:.3f}")
 else:
   st.error("No data found for MSFT.")
