@@ -38,4 +38,4 @@ if not data.empty:
   # Print the result directly to the screen
   st.metric(label="MSFT Sharpe Ratio", value=f"${overall_average:.2f}")
 else:
-st.error("No data found for MSFT.")
+  st.error("No data found for MSFT.")
